@@ -17,7 +17,7 @@
     <input type="submit" value="X" name="multiplicar">
     <input type="submit" value="/" name="dividir">
 
-    <!-- Botones de borrad de los campos y limpiado de resultados recientes en la pantalla -->
+    <!-- Botones de borrado de los campos y limpiado de resultados recientes en la pantalla -->
     <input type="reset" value="Borrar" name="reseteo">
     <input type="submit" action="calculadora.php" value="Limpiar Resultados" name="limpiar"><br/><br/>
     <?php
