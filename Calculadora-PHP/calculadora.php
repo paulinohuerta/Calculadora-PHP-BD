@@ -16,6 +16,8 @@
     <input type="submit" value="-" name="restar">
     <input type="submit" value="X" name="multiplicar">
     <input type="submit" value="/" name="dividir">
+    <input type="submit" value="x^y" name="elevar">
+
 
     <!-- Botones de borrado de los campos y limpiado de resultados recientes en la pantalla -->
     <input type="reset" value="Borrar" name="reseteo">
@@ -40,7 +42,9 @@
 		if(isset($_POST['dividir'])){
 		   dividir();
 		}
-
+		if(isset($_POST['elevar'])){
+		   elevar();
+		}
 
 	?>
 </form> 

@@ -64,6 +64,18 @@
 		echo "La división de ".$valor1." / ".$valor2. " = " .$resul."<br/>";
 		guardarDatos($resul); 
 	}
+	function elevar(){
+		#Recuperación en variables de los valores introducidos por el usuario
+		$valor1 = $_POST['n1']; 
+		$valor2 = $_POST['n2'];
+
+		#Operación
+		$resul = pow($valor1,$valor2); 
+
+		#Salida a pantalla del resultado obtenido
+		echo "La potencia de ".$valor1." elevado a ".$valor2. " = " .$resul."<br/>";
+		guardarDatos($resul); 
+	}
 
 
 	#Función de guardado y comparación de resultados en la BD
