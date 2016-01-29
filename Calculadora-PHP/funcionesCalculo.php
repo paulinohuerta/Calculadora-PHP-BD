@@ -59,10 +59,15 @@
 
 		#Operación
 		$resul = $valor1 / $valor2; 
+                
+                if ($resul == 0.0) {
+                  echo 'Divisor es 0<br />';
+                } else {
+                  #Salida a pantalla del resultado obtenido
+                  echo "La división de ".$valor1." / ".$valor2. " = " .$resul."<br/>";
+                  guardarDatos($resul);
+                }
 
-		#Salida a pantalla del resultado obtenido
-		echo "La división de ".$valor1." / ".$valor2. " = " .$resul."<br/>";
-		guardarDatos($resul); 
 	}
 	function elevar(){
 		#Recuperación en variables de los valores introducidos por el usuario
@@ -118,7 +123,7 @@
 		#Comparación del resultado obtenido con los almacenados
 		if ($result->num_rows > 0) {
 		    while($row = $result->fetch_assoc()) {
-		        if($row["resultados"]==$dato){
+		        if(strcmp($row["resultados"],$dato)==0){
 		        	$coincidencias++;
 		        }
 		    }
